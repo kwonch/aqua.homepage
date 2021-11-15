@@ -1,0 +1,228 @@
+@charset "UTF-8";
+
+/* Set */
+
+:root {
+  --red-color: #f13a11;
+  --white-color: #ffffff;
+  --dark-color: #171819;
+  --ghostwhite-color: #f8f8f8;
+  --gray-color: #909090;
+  --darkgray-color: #404040;
+
+  --base-font-family: "Plain", sans-serif;
+
+  --font-weight-bold: bold;
+  --font-weight-normal: normal;
+  --font-weight-light: 300;
+  --font-weight-thin: 100;
+
+  --font-size-h1: 48px;
+  --font-size-h2: 36px;
+  --font-size-h3: 28px;
+  --font-size-h4: 24px;
+  --font-size-h5: 20px;
+  --font-size-h6: 18px;
+  --font-size-L: 16px;
+  --font-size-M: 14px;
+  --font-size-S: 12px;
+
+  --border-radius-large: 100%;
+  --border-radius-small: 2px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* background: var(--ghostwhite-color); */
+}
+
+/* Font Set */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--font-weight-thin);
+  line-height: normal;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -2px;
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+h4 {
+  font-size: var(--font-size-h4);
+}
+
+h5 {
+  font-size: var(--font-size-h5);
+}
+
+h6 {
+  color: var(--black-color);
+  font-size: var(--font-size-h6);
+  line-height: inherit;
+  margin: 0;
+}
+
+p {
+  color: var(--black-color);
+  font-size: var(--font-size-M);
+  font-weight: var(--font-weight-light);
+  line-height: 1.5em;
+}
+
+b,
+strong {
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0;
+}
+
+/* OP */
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white-color);
+  transition: all 0.3s ease;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: red;
+  outline: none;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+/* ===============  INDEX  ============= */
+
+/* INDEX footer */
+
+/* 
+	<footer class="footer">
+		<div class="footer_box">
+			<ul>
+				<li class="first"><a href="#">이용안내</a></li>
+				<li><a href="#">이용시간·요금안내</a></li>
+				<li><a href="#">가이드맵</a></li>
+				<li><a href="#">주변 관광안내</a></li>
+				<li><a href="#">온라인 기프트샵</a></li>
+			</ul>
+			<ul>
+				<li class="first"><a href="#">프로그램</a></li>
+				<li><a href="#">프로그램 일정</a></li>
+				<li><a href="#">전체 프로그램</a></li>
+			</ul>
+			<ul>
+				<li class="first"><a href="#">혜택안내</a></li>
+				<li><a href="#">이벤트</a></li>
+				<li><a href="#">제휴할인</a></li>
+			</ul>
+			<ul>
+				<li class="first"><a href="#">단체안내</a></li>
+				<li><a href="#">학습·일반단체</a></li>
+				<li><a href="#">인바운드 단체</a></li>
+				<li><a href="#">기업단체(제휴)</a></li>
+			</ul>
+			<ul>
+				<li class="first"><a href="#">아쿠아플라넷</a></li>
+				<li><a href="#">아쿠아플라넷 제주</a></li>
+				<li><a href="#">아쿠아플라넷 친구들</a></li>
+				<li><a href="#">해양생물연구센터</a></li>
+				<li><a href="#">아쿠아리스트</a></li>
+				<li><a href="#">오시는 길</a></li>
+			</ul>
+			<ul>
+				<li class="first"><a href="#">고객의소리</a></li>
+				<li><a href="#">공지사항</a></li>
+				<li><a href="#">자주 묻는 질문</a></li>
+				<li><a href="#">고객소리함</a></li>
+			</ul>
+		</div>
+		<div class="footer_text">
+			<p>Copyright ⓒ Aquaplanet Co.,Ltd. All Rights Reserved.</p>
+			<div class="footer_icons">
+				<a href="#" class="bi bi-youtube"></a>
+				<a href="#" class="bi bi-twitter"></a>
+				<a href="#" class="bi bi-facebook"></a>
+				<a href="#" class="bi bi-instagram"></a>
+			</div>
+		</div>
+	</footer> 
+*/
+
+/* CSS Footer */
+.footer {
+  width: 100%;
+  height: auto;
+  background-image: url("../imgs/footer_back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.footer_box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.footer_box > ul {
+  padding: 2%;
+}
+.footer_box ul .first > a {
+  font-size: 1.3em;
+  font-weight: var(--font-weight-bold);
+}
+.footer_box ul li {
+  width: 100%;
+  padding: 8px 12px;
+}
+.footer_box ul li a {
+  font-size: 0.6vw;
+}
+.footer_text {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 2%;
+}
+.footer_text p {
+  color: var(--white-color);
+}
+.footer_icons {
+  display: flex;
+}
+.footer_icons a {
+  font-size: 24px;
+  padding: 8px 20px;
+}

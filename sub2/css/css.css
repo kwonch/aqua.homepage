@@ -1,0 +1,403 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+:root {
+  --red-color: #f13a11;
+  --white-color: #ffffff;
+}
+body {
+  background-color: #f8f8f8;
+}
+
+#slider {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#slider video {
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 1;
+}
+
+header {
+  z-index: 3;
+  width: 100%;
+  height: 900px;
+  background-size: cover;
+  background-position: center;
+  color: var(--white-color);
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar_menu {
+  z-index: 3;
+  min-width: 25%;
+  display: flex;
+}
+.navbar_menu li {
+  padding: 10px;
+  border-bottom: 1px solid white;
+}
+.navbar_menu li a {
+  font-size: 1.1vw;
+  padding: 8px 12px;
+}
+
+.navbar_icon a {
+  z-index: 3;
+  padding: 8px;
+  font-size: var(--font-size-h6);
+}
+.navbar_icon input {
+  font-size: var(--font-size-h6);
+  color: white;
+  background: none;
+  border: none;
+}
+
+@font-face {
+  font-family: "IBMPlexSansKR-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Bold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IBMPlexSansKR-SemiBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-SemiBold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IBMPlexSansKR-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "IBMPlexSansKR-Regular";
+  text-align: center;
+}
+
+#slider {
+  width: 100%;
+  height: 480px;
+  margin: 0 auto;
+}
+#slider img {
+  width: 100%;
+  height: 700px;
+}
+
+section {
+  width: 1200px;
+  height: 4000px;
+  margin: 0 auto;
+  position: relative;
+}
+section h1 {
+  font-family: "IBMPlexSansKR-SemiBold";
+}
+
+.button1 {
+  width: 700px;
+  height: 100px;
+  margin: 0 auto;
+  position: relative;
+  top: -5px;
+}
+.button1 button {
+  background-color: #fca103;
+  position: relative;
+  top: 250px;
+  width: 100px;
+  height: 60px;
+  margin: 10px;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: small;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: inline-block;
+}
+.button1 button:hover {
+  background-color: #ffdc9e;
+}
+
+.jeju {
+  width: 100%;
+  height: 150px;
+  margin: 0 auto;
+  padding-top: 300px;
+  padding-bottom: 300px;
+}
+.jeju img {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+  opacity: 0.5;
+}
+.jeju h1 {
+  font-size: 50px;
+}
+.jeju p {
+  font-size: 20px;
+}
+
+#theme {
+  width: 100%;
+  float: left;
+  position: relative;
+  bottom: 5px;
+}
+
+.map_img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+.map_img img {
+  width: 100%;
+}
+.map_text {
+  width: 100%;
+  height: 1700px;
+  display: block;
+  margin: 0 auto;
+  padding: 350px 65px;
+}
+
+.west {
+  width: 1070px;
+  height: 1000px;
+  float: left;
+  margin: 0 auto;
+  position: relative;
+  bottom: 150px;
+}
+.east {
+  width: 1070px;
+  height: 1000px;
+  float: left;
+  margin: 0 auto;
+  position: relative;
+}
+
+.box {
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+  float: left;
+}
+.box img {
+  width: 260px;
+  height: 200px;
+  margin: 20px;
+  border-radius: 10px;
+}
+.text {
+  width: 280px;
+  height: 150px;
+}
+
+.guide_img {
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+.guide_img img {
+  width: 100%;
+}
+.guide_text {
+  width: 300px;
+  height: 450px;
+  background-color: white;
+  border-radius: 20px;
+  opacity: 0.5;
+  margin: 0 auto;
+  z-index: 2;
+  position: relative;
+  left: 400px;
+  bottom: 500px;
+}
+.guide_list {
+  color: black;
+  margin: 0 auto;
+  z-index: 3;
+  position: relative;
+  left: 10px;
+  text-align: left;
+}
+
+#mountain > table {
+  margin: 0 auto;
+  padding: 75px;
+  line-height: 30px;
+  float: left;
+}
+
+.mountainTB {
+  width: 1200px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.mountainTB th {
+  text-align: center;
+  width: 200px;
+  background-color: #ddd;
+}
+.mountainTB td {
+  text-align: center;
+  width: 150px;
+  background-color: #eee;
+  padding: 5px;
+  color: #333;
+}
+
+.mountainTB > table {
+  float: left;
+  margin: 0 auto;
+}
+
+#mountain h1 {
+  padding: 50px;
+  font-size: 30px;
+}
+
+.winter {
+  padding-bottom: 30px;
+}
+.winter > table {
+  position: relative;
+  left: 420px;
+}
+
+.spring {
+  padding-bottom: 30px;
+}
+.spring > table {
+  position: relative;
+  left: 420px;
+}
+.summer > table {
+  position: relative;
+  left: 420px;
+}
+
+#road {
+  display: none;
+  width: 100%;
+  height: 600px;
+}
+#mountain {
+  display: none;
+}
+#mountain img {
+  width: 1200px;
+  height: 654px;
+}
+#ole {
+  margin: 0 auto;
+  display: none;
+}
+#ole img {
+  width: 1200px;
+  height: 654px;
+}
+
+#one {
+  width: 100%;
+  height: 4000px;
+  margin: 0 auto;
+  position: relative;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white-color);
+  transition: all 0.3s ease;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: red;
+  outline: none;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  background-image: url("../imgs/footer_back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.footer_box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.footer_box > ul {
+  padding: 2%;
+}
+.footer_box ul .first > a {
+  font-size: 1.3em;
+  font-weight: var(--font-weight-bold);
+}
+.footer_box ul li {
+  width: 100%;
+  padding: 8px 12px;
+}
+.footer_box ul li a {
+  font-size: 0.6vw;
+}
+.footer_text {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 2%;
+}
+.footer_text p {
+  color: var(--white-color);
+}
+.footer_icons {
+  display: flex;
+}
+.footer_icons a {
+  font-size: 24px;
+  padding: 8px 20px;
+}

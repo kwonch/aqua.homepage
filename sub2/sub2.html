@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    @import url('css/css.css');
+
+    </style>
+
+    
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+
+<script>
+  
+  $(function() {
+        $('button:nth-of-type(1)').click(function() {
+            $("#theme").show();
+            $("#road").hide();
+            $("#mountain").hide();
+            $("#ole").hide();
+            $("section").css({height:4000});
+        });
+
+        $('button:nth-of-type(2)').click(function() {
+            $("#road").show();
+            $("#theme").hide();
+            $("#mountain").hide();
+            $("#ole").hide();
+            $("section").css({height:1700});
+        });
+
+        $('button:nth-of-type(3)').click(function() {
+            $("#mountain").show();
+            $("#theme").hide();
+            $("#road").hide();
+            $("#ole").hide();
+            $("section").css({height:2500});
+        });
+
+        $('button:nth-of-type(4)').click(function() {
+            $("#ole").show();
+            $("#theme").hide();
+            $("#road").hide();
+            $("#mountain").hide();
+            $("section").css({height:1700});
+        });
+    });
+
+</script>
+
+</head>
+<body>
+    <div id="slider">
+        <video src="imgs/jeju.mp4" loop muted autoplay></video>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <ul class="navbar_menu">
+                <li><a href="../index.html">Home</a></li>
+				<li><a href="../sub1/sub1.html">Brand</a></li>
+				<li><a href="../sub2/sub2.html">Tour</a></li>
+				<li><a href="../sub3/sub3.html">Marine Life</a></li>
+            </ul>
+            <ul class="navbar_icon">
+                <li><a href="#" class="bi bi-search"></a></li>
+                <li><input type="text" value="Search"></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+    <section>
+        <div class="button1">
+            <button>테마 관광</button>
+            <button>해안 도로 여행</button>
+            <button>한라산 오르기</button>
+            <button>제주올레</button>
+        </div>    
+
+            <div class="jeju">
+                <h1>주변 관광안내</h1>
+                <p>천혜의 자연경관이 수려한 아름다운 섬 濟州道<br>
+                    걸으멍 놀멍 쉬멍 볼거리 가득한 제주도여행</p>
+                <img src="imgs/jeju_icon.png" alt="돌하르방">
+            </div>
+
+
+            <div id="theme">
+
+                <div class="map_img">
+                    <img src="imgs/map.jpg" alt="지도">
+                </div>
+
+
+                <div class="map_text">
+
+                    <div class="west">
+                        <h1>서부권</h1>
+                        <div class="box">
+                            <div class="img"><img src="imgs/01.jpg" alt="시장"></div>
+                            <div class="text">
+                                <h3>제주민속오일 시장</h3>
+                                <span>제주 최대의 오일장. 지역민들뿐만 아니라<br>
+                                    관광객들도 한번쯤 둘러보고 가는 명소이다.</span>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="img"><img src="imgs/02.jpg" alt="한림공원"></div>
+                            <div class="text">
+                                <h3>한림공원 길 사진</h3>
+                                <span>용암동굴인 협재굴, 쌍용굴, 제주도<br>
+                                    전통초가들을 구경할 수 있는 곳이다.</span>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="img"><img src="imgs/03.jpg" alt="더마파크"></div>
+                            <div class="text">
+                                <h3>더마파크</h3>
+                                <span>더마파크는 정식명칭은 ‘The 馬’파크로, <br>
+                                    세계 최대 규모의 상설기마공연장이다.<br>
+                                    국내 최초로 마상공연 ’칭기즈칸의 검은 깃발’ 4부작을 진행중이다.</span>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="img"><img src="imgs/04.jpg" alt="오설록"></div>
+                            <div class="text">
+                                <h3>오설록</h3>
+                                <span>오설록에서는 5천년의 역사를 자랑하는<br>
+                                    기호식품인 녹차에 대한 정보와 차문화의<br>
+                                    역사를 살펴볼 수 있는 박물관.</span>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="img"><img src="imgs/05.jpg" alt="유리의성"></div>
+                            <div class="text">
+                                <h3>유리의 성</h3>
+                                <span>온통 유리로 꾸며놓은 테마파크, 반짝반짝<br>
+                                    유리가 말랑해져 마치 풍선껌처럼 늘어나는<br>
+                                    모습이 신기하고 재미있다.</span>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="img"><img src="imgs/06.jpg" alt="테디베어"></div>
+                            <div class="text">
+                                <h3>제주테디베어박물관</h3>
+                                <span>100년이 넘는 테디베어의 역사와 더불어,<br>
+                                    세계 유명 작가들의 예술작품을 테마로 한<br>
+                                    테디베어등 다양한 볼거리를 선사한다.</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="east">
+                        <h1>동부권</h1>
+                        <div class="box">
+                            <div class="img"><img src="imgs/07.jpg" alt="동굴"></div>
+                            <div class="text">
+                                <h3>김녕만장굴</h3>
+                                <span>화산 용암의 침하운동으로 생성된 세계 최고<br>
+                                    규모의 용암동굴. 천연기념물 제 98호로<br>
+                                    지정되었다.</span>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="img"><img src="imgs/08.jpg" alt="휴양림"></div>
+                            <div class="text">
+                                <h3>절물자연 휴양림</h3>
+                                <span>삼림욕은 심폐기능의 강화, 기관지 천식 및<br>
+                                    폐결핵을 예방하는데 도움. 특히 절물에서는<br>
+                                    신경통과 위장병에 효과가 있는 약수도 맛 볼 수
+                                    있으니 일석이조이다.</span>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="img"><img src="imgs/09.jpg" alt="성산일출봉"></div>
+                            <div class="text">
+                                <h3>성산일출봉</h3>
+                                <span>바다 한가운데서 화산이 수중 폭발해 생겨난<br>
+                                    화구. 보존가치가 높아 지난 2000년 천연기념물
+                                    420호로 지정되었다.</span>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="img"><img src="imgs/10.jpg" alt="섭지코지"></div>
+                            <div class="text">
+                                <h3>섭지코지</h3>
+                                <span>드라마 ‘올인’의 촬영지로 유명한 곳. 봄에는<br>
+                                    노란 유채꽃 가을에는 억새꽃이 로맨틱한<br>
+                                    분위기를 자아낸다.</span>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="img"><img src="imgs/11.jpg" alt="김영갑"></div>
+                            <div class="text">
+                                <h3>김영갑 갤러리</h3>
+                                <span>15년 동안 제주의 오름과 바다만을 찍으며<br>
+                                    살던 김영갑은 갤러리를 만들던 중 루게릭 병으로
+                                    고인이 됐다. 그의 사진에는 제주의 숨겨진
+                                    속살까지 담겨있다.</span>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="img"><img src="imgs/12.jpg" alt="민속촌"></div>
+                            <div class="text">
+                                <h3>제주 민속촌 박물관</h3>
+                                <span>제주에 하나뿐인 민속촌 테마공원.<br>
+                                    생업생활용구와 전통놀이기구 등 약 3천여 점의
+                                    제주 고유자료를 받아볼 수 있다.</span>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div id="road">
+                <div class="guide_img"><img src="imgs/guide_map01.png" alt="지도1"></div>
+                <div class="guide_text">
+                    <div class="guide_list">
+                        <ul>
+                            <li>① 신창<br>숨막히는 일몰풍경을 자랑하는 해안도로</li>
+                            <li>② 하귀 ~ 애월<br>야생의 제주와 만나는 해안도로</li>
+                            <li>③ 용담 ~ 이호<br>연인들의 필수 데이트 코스</li>
+                            <li>④ 함덕<br>고즈넉한 바다와 만나는 해안도로</li>
+                            <li>⑤ 김녕 ~ 행원<br>풍차가 주는 이국적인 해안도로</li>
+                            <li>⑥ 세화 ~ 종달<br>계절따라 변화하는 다이나믹한 해안도로</li>
+                            <li>⑦ 표선<br>돌담을 끼고 제주를 느끼는 해안도로</li>
+                            <li>⑧ 사계<br>모든 자연이 조화롭게 만나는 해안도로</li>
+                            <li>⑨ 고산 ~ 일과리<br>한 폭의 수채화처럼 펼쳐진 해안도로</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="mountain">
+                <img src="imgs/guide_map02.jpg" alt="지도2">
+                <h1>코스별 입산 시간</h1>
+
+            <div class="mountainTB">
+               
+                
+                <div class="winter">
+                    <h3>동절기 입산 통제(11~2월)</h3>
+                
+                <table>
+                    <tr>
+                        <th>어리목 : 매표소</th>
+                        <td>12:00</td>
+                    </tr>
+                    <tr>
+                        <th>어리목 : 윗세오름통제소</th>
+                        <td>13:00</td>
+                    </tr>
+                    <tr>
+                        <th>영실 : 동제소</th>
+                        <td>12:00</td>
+                    </tr>         
+                    
+                    <tr>
+                        <th>윗세오름</th>
+                        <td>15:00</td>
+                    </tr>
+                    <tr>
+                        <th>동능정상</th>
+                        <td>13:30</td>
+                    </tr>
+                    <tr>
+                        <th>남벽분기점</th>
+                        <td>14:00</td>
+                    </tr>
+                </table>
+                </div>
+
+
+            
+            <div class="spring">
+                <h3>춘추절기 입산 통제(3, 4, 9, 10월)</h3>
+
+                <table>
+                    <tr>
+                        <th>어리목 : 매표소</th>
+                        <td>14:00</td>
+                    </tr>
+                    <tr>
+                        <th>어리목 : 윗세오름통제소 </th>
+                        <td>13:30</td>
+                    </tr>
+                    <tr>
+                        <th>영실 : 동제소</th>
+                        <td>14:00</td>
+                    </tr>
+
+                    <tr>
+                        <th>윗세오름</th>
+                        <td>16:00</td>
+                    </tr>
+                    <tr>
+                        <th>동능정상</th>
+                        <td>14:30</td>
+                    </tr>
+                    <tr>
+                        <th>남벽분기점</th>
+                        <td>14:30</td>
+                    </tr>
+                </table>
+            </div>
+
+    
+           
+            <div class="summer">
+                <h3>하절기 입산 통제(5~8월)</h3>
+                <table>
+                   
+                    <tr>
+                        <th>어리목 : 매표소</th>
+                        <td>15:00</td>
+                    </tr>
+                    <tr>
+                        <th>어리목 : 윗세오름통제소</th>
+                        <td>14:00</td>
+                    </tr>
+                    <tr>
+                        <th>영실 : 동제소</th>
+                        <td>15:00</td>
+                    </tr>
+
+                    <tr>
+                        <th>윗세오름</th>
+                        <td>17:00</td>
+                    </tr>
+                    <tr>
+                        <th>동능정상</th>
+                        <td>14:00</td>
+                    </tr>
+                    <tr>
+                        <th>남벽분기점</th>
+                        <td>15:00</td>
+                    </tr>
+  
+                </table>
+            </div>    
+        </div>
+    </div>
+
+
+        <div id="ole">
+            <img src="imgs/guide_map03.jpg" alt="지도3">
+        </div>
+    
+
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer_box">
+            <ul>
+                <li class="first"><a href="#">이용안내</a></li>
+                <li><a href="#">이용시간·요금안내</a></li>
+                <li><a href="#">가이드맵</a></li>
+                <li><a href="#">주변 관광안내</a></li>
+                <li><a href="#">온라인 기프트샵</a></li>
+            </ul>
+            <ul>
+                <li class="first"><a href="#">프로그램</a></li>
+                <li><a href="#">프로그램 일정</a></li>
+                <li><a href="#">전체 프로그램</a></li>
+            </ul>
+            <ul>
+                <li class="first"><a href="#">혜택안내</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">제휴할인</a></li>
+            </ul>
+            <ul>
+                <li class="first"><a href="#">단체안내</a></li>
+                <li><a href="#">학습·일반단체</a></li>
+                <li><a href="#">인바운드 단체</a></li>
+                <li><a href="#">기업단체(제휴)</a></li>
+            </ul>
+            <ul>
+                <li class="first"><a href="#">아쿠아플라넷</a></li>
+                <li><a href="#">아쿠아플라넷 제주</a></li>
+                <li><a href="#">아쿠아플라넷 친구들</a></li>
+                <li><a href="#">해양생물연구센터</a></li>
+                <li><a href="#">아쿠아리스트</a></li>
+                <li><a href="#">오시는 길</a></li>
+            </ul>
+            <ul>
+                <li class="first"><a href="#">고객의소리</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">자주 묻는 질문</a></li>
+                <li><a href="#">고객소리함</a></li>
+            </ul>
+        </div>
+        <div class="footer_text">
+            <p>Copyright ⓒ Aquaplanet Co.,Ltd. All Rights Reserved.</p>
+            <div class="footer_icons">
+                <a href="#" class="bi bi-youtube"></a>
+                <a href="#" class="bi bi-twitter"></a>
+                <a href="#" class="bi bi-facebook"></a>
+                <a href="#" class="bi bi-instagram"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
