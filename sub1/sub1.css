@@ -106,7 +106,7 @@ table, tr, th ,td {margin:0; padding:0; }
 #middle .tariff .tariff_1 .left,.left2,.bold,th {border-bottom: 1px solid #e0e0e0; padding: 35px 30px;}
 #middle .tariff_1 .left{border-left: 1px solid #e0e0e0; padding: 0px 150px; font-family: 'IBMPlexSansKR-Regular';font-size:18px;}
 #middle .tariff_1 .left2{border-left: 1px solid #e0e0e0; padding:0px 200px; font-family: 'IBMPlexSansKR-Regular';font-size:18px;}
-#middle .tariff_1 th{;font-family: 'IBMPlexSansKR-Bold';font-size:20px; }
+#middle .tariff_1 th{font-family: 'IBMPlexSansKR-Bold';font-size:20px; }
 #middle .tariff_1 .bold{font-size: 20px; font-family: 'IBMPlexSansKR-SemiBold';}
 
 #middle .sub_title2{float:left;width: 150px; margin:25px 0 0 50px;font-size: 25px;font-family: 'IBMPlexSansKR-SemiBold';display: inline-block;}
